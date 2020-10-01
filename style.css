@@ -340,8 +340,96 @@ body{
     color: #4a4949;
     text-align: center;
 }
-/*End section-title*/
+/*End travel-section-title*/
 
+/*Start travel_paragraph*/
+.travel_paragraph{
+
+}
+/*End travel_paragraph*/
+
+/*Start Map*/
+#citytooltip{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 40px;
+    width: 90%;
+    height: 200px;
+    margin: 125px auto;
+    background-color: #ffffff;
+    border-radius: 18px;
+}
+#tooltiptitle{
+    font-family: 'Changa', sans-serif;
+    font-size: xx-large;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    border-radius:20px;
+    font-weight: bold;
+}
+#tooltipp{
+    font-family: 'Changa', sans-serif;
+}
+path:hover{
+    fill : #ed1b24;
+}
+.svg-map{
+    background-color: transparent !important;
+    border:0px !important;
+}
+/*End Map*/
+
+.travel-season-title{
+    background-color: #d4d4d499;
+    padding: 20px;
+    border-radius: 11px;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    font-family: work;
+    font-weight: bold;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    color: #6d6a6a;
+}
+.img-season{
+    width: 100%;
+    border: 0px !important;
+    border-radius: 13px !important;
+    height: 200px !important;
+    background-color: transparent !important;
+}
+.centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: fantasy;
+    font-size: 45px;
+    background-color: #000000a6;
+    width: 200px;
+    border-radius: 40px;
+}
+.centered-title:hover{
+    color: #ed1b24;     
+    background-color: #000000eb;
+}
+.cat{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 30px;
+    background: white;
+}
+.cat-icon{
+    width: 48px;
+    height: 48px;
+}
+.cat-caption{
+    color:black;
+}
 /*End Travel Into-section*/
 
 /*End Travel Page*/

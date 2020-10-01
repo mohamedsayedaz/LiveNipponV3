@@ -48,5 +48,16 @@ jQuery(document).ready(function($) {
 		}
 		$('#review-4-p').slideToggle('slow');
 	});
+
+	//Map Function
+	$("path").click(function(){
+		var selectedCity = $(this).attr("name");
+		var cityDescription = $(this).attr("data");
+		$("path").css('fill','#7c7c7c')
+		$(this).css('fill','#ed1b24');
+		$("#tooltiptitle").text(selectedCity);
+		$("#tooltipp").text(cityDescription);
+		$("#citytooltip").show(1000);
+	});
 	
 });
