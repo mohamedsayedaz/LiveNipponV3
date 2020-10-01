@@ -1,0 +1,323 @@
+/*
+Theme Name: LiveNippon 
+Author: Mohamed Sayed
+Description: This is a theme for Travel Agency
+Version: 1.0
+Text Domain: LiveNippon
+*/
+/************************************************************************/
+
+@font-face{
+    font-family:Mont;
+    src : url('./fonts/Mont.ttf');
+}
+@font-face{
+    font-family:work;
+    src: url('./fonts/Work.ttf');
+}
+
+body{
+    font-family: Work !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Start Logo*/
+.img-logo{
+    height: 85px !important;
+    background-color: transparent !important;
+    border:0px !important;
+}
+/*End Logo*/
+
+/*Start site-nav*/
+.site-nav{
+    background-color: #eaeaea;
+}
+/*End site-nav*/
+
+/*Start Nav-link*/
+.nav-link{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.nav-link:hover{
+    color:white;
+    border:1px solid black;
+    background-color: black;
+    border-radius: 20px;
+    transition: 1000ms;
+}
+/*End Nav-link*/
+
+/*Start Social Icon*/
+.social-contact-icon{
+    width: 42px;
+    height: 42px;
+    background-color: transparent !important;
+    border: 0px !important;
+    margin-left: 5px;
+}
+/*End Social Icon*/
+
+/*Start btn toggler*/
+.bars-icon{
+    width: 25px;
+    height: 30px !important;
+}
+/*End btn toggler*/
+
+#menu-main-menu{
+    margin-right: 10px;
+}
+
+/*Start Book Button*/
+.bokunButton{
+    background-color: transparent;
+    font-weight: bold;
+    border: 2px solid #585858;
+    border-radius: 21px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.bokunButton:hover{
+    background-color:#000000c2;
+    color:white;
+    transition: 1000ms;
+}
+/*End Book Button*/
+
+/*Start Into-section*/
+#intro-section{
+    background-image: url('./img/b2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height:500px !important;
+}
+/*End Into-section*/
+
+/*Start Jumbotron*/
+.jumbotron{
+    border-radius: 0px !important;
+    overflow: overlay;
+}
+/*End Jumbotron*/
+
+/*Start intro-title*/
+#intro-title{
+    opacity: 0%;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 9vh;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    color: #000000d1;
+    font-family: Work; /*download fantasy font*/
+}
+/*End intro-title*/
+
+/*Start section-title*/
+.section-title{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4a4949;
+    text-align: center;
+}
+/*End section-title*/
+
+/*Start Best-seller*/
+#best-seller-col{
+    margin: 0 auto;
+    text-align: center;
+}
+#best-sellers-section{
+    height: 600px!important;
+    width: 100%;
+    background-color: #ddd;
+}
+.offers_div{
+    margin-top: 40px !important;
+    flex-wrap: unset !important;
+}
+/*End Best-seller*/
+@media (max-width: 576px){
+    .offers_div{
+        flex-wrap: wrap !important;
+    }
+    .review-avatar-img{
+        margin-left: 39px;
+        margin-top: 20px;
+    }
+    .avatar-name{
+        margin-left: -11px !important;
+        text-align: center !important;
+        margin-top: 12px;
+        margin-bottom: 25px;
+    }
+}
+/*Start center-d*/
+.center-d{
+    margin: 0 auto;
+}
+/*End center-d*/
+
+/*Start Jumbotron*/
+.jumbotron{
+    height: 100% !important;
+    margin-bottom: 0px !important;
+}
+/*End Jumbotron*/
+
+/*Start Trip Offer*/
+.trip_offer{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right:10px;
+    opacity: 0%;
+
+}
+.trip_title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.trip_img{
+    background-color: transparent !important;
+    border: 0px !important;
+    border-radius: 12px !important;
+    height: 220px !important;
+    width: 350px;
+    margin-bottom: 10px;
+}
+.trip_btn{
+    width: 100%;
+    border-radius: 20px !important;
+}
+/*End Trip Offer*/
+
+/*start customers-reviews*/
+#customers-reviews{
+    height: max-content !important; 
+}
+.review-col{
+     margin: 0 auto !important;
+    text-align: center !important; 
+}
+.review-avatar-img{
+    border: 0px !important;
+    background-color: transparent !important;
+    border-radius: 80px !important;
+    text-align: center;
+}
+.avatar-name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #757575;
+}
+.review-title a{
+    color: #585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+.review-title a:hover{
+    text-decoration: none;
+    color: black;
+}
+.review-p{
+    font-size: 18px;
+    color: #676767;
+    font-weight: bold;
+}
+.review-p-body{
+    display: none;
+    color: #676767;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.btn-review{
+    margin-bottom: 10px;
+}
+#review-1{
+   margin-top: 50px;
+}
+.review-div{
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #dcdada;
+    margin-bottom: 20px;
+    margin-left: 20px ;
+    margin-right: 20px ;
+}
+/*end customers-reviews*/
+/*Start Row*/
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+/*End Row*/
+
+/*Start Last-Section*/
+.r-icon{
+    width:64px;
+    height: 64px;
+}
+#Last-Section{
+    background-color: black;
+    background-image: url('./img/2.jpg');
+    background-size: cover;
+    background-position:center;
+}
+.col-back{
+    background-color: #00000073;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.ptitle{
+    font-weight: bold;
+}
+.con-text{
+    background-color: #eae9e9b3;
+}
+#why-div{
+    padding: 30px;
+}
+#why-title{
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #6d6d6d;
+}
+#why-p{
+    font-size: 16px;
+    color: #1f1f1f;
+}
+/*End Last-Section*/
+
+/*Start Footer*/
+.footer{
+    background-color: #252525;
+    color: white;
+    padding: 10px;
+    font-size: 20px !important;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    height: 60px;
+}
+/*End Footer*/
