@@ -1,5 +1,9 @@
 jQuery(document).ready(function($) {
-	$('#intro-title').animate({'margin-top' : '100px','opacity' : '100%'},1000);
+
+	//Intro Title Animation
+	$('#intro-title').animate({'margin-top' : '100px','opacity' : '100%'},1000);		
+
+	//Index Page Best Sellers Section Animation
 	$('#best-sellers-section').mouseenter(function() {
 		$('#first_trip').animate({'opacity': '100%'},500, function() {
 		$('#second_trip').animate({'opacity': '100%'},500, function() {

@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<!-- Exams Section-->
+<!-- Intro Section-->
 <div class="jumbotron" id="intro-section">
     <div class="row">
         <div class="col-sm-9 center-d">

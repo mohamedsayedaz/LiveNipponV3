@@ -321,3 +321,27 @@ body{
     height: 60px;
 }
 /*End Footer*/
+
+/*Start Travel Page*/
+
+
+/*Start Travel Into-section*/
+#travel-intro-section{
+    background-image: url('./img/6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height:400px !important;
+}
+/*Start travel-section-title*/
+.travel-section-title{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4a4949;
+    text-align: center;
+}
+/*End section-title*/
+
+/*End Travel Into-section*/
+
+/*End Travel Page*/
