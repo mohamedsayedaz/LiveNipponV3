@@ -474,7 +474,7 @@ path:hover{
 
 /*Start Contact Page*/
 #contact-form{
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px;
 }
 #contact-title{
@@ -484,7 +484,7 @@ path:hover{
 }
 .contact-txt{
     border: 0px !important;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     border-radius: 15px !important;
     background-color: #0000008c !important;
     font-size: 17px !important;
@@ -521,7 +521,7 @@ path:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: max-content;   
+    height: 100% !important;   
 }
 /*end Contact Page*/
 /*End Travel Page*/
