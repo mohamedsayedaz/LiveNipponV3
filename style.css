@@ -432,4 +432,44 @@ path:hover{
 }
 /*End Travel Into-section*/
 
+/*Start About Page*/
+#about-section{
+    background-image: url('./img/t.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: max-content;   
+}
+#htitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: #404040;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+.about-title{
+    color: #5d5d5d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+}
+#about-f-title{
+    font-size: 33px;
+    margin-bottom: 25px;
+    color: #5f5f5f;
+    font-weight: bold;
+    color: white;
+}
+.about-p{
+    line-height: 30px;
+}
+.a-container{
+    background-color: #000000a3;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+/*End About Page*/
+
 /*End Travel Page*/
