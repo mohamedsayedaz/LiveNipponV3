@@ -431,6 +431,7 @@ path:hover{
     color:black;
 }
 /*End Travel Into-section*/
+/*End Travel Page*/
 
 /*Start About Page*/
 #about-section{
@@ -524,4 +525,42 @@ path:hover{
     height: 100% !important;   
 }
 /*end Contact Page*/
-/*End Travel Page*/
+
+/*Start Trips Page*/
+#trips-section{
+    background-color: #d4d4d4;
+}
+/*Start trip-post section*/
+.trip-post{
+   text-align: left;
+    border: 1px solid #9c9c9c;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+.trip-post-title{
+    font-size: 30px !important;
+    font-weight: bold !important;
+    padding-right: 20px !important;
+    margin-bottom: 12px;
+    color: #000000b8 !important;
+}
+.exam-link{
+    font-size: 20px !important;
+    border: 1px solid #000 !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    float: left;
+}
+.exam-link:hover{
+    background-color: #2f2f2f;
+    color: white !important;
+    transition: 1000ms;  
+}
+.trip-post-img{
+    width:100% !important;
+}
+/*End trip-post section*/
+
+/*End Trips Page*/
