@@ -472,4 +472,56 @@ path:hover{
 }
 /*End About Page*/
 
+/*Start Contact Page*/
+#contact-form{
+    margin-top: 50px;
+    padding: 10px;
+}
+#contact-title{
+    font-weight: bold;
+    font-size: 40px;
+    color: #484848;
+}
+.contact-txt{
+    border: 0px !important;
+    margin-bottom: 15px;
+    border-radius: 15px !important;
+    background-color: #0000008c !important;
+    font-size: 17px !important;
+    padding: 15px !important;
+    color:white !important;
+
+}
+.contact-txt:focus{
+    border-bottom: 5px solid white !important;
+    font-size: 20px !important;
+    text-align: center;
+    font-weight: bold;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.send-btn{
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold ;
+    border-radius: 10px;
+    padding: 10px ;
+    background-color: #383838;
+    color: white ;
+}
+.send-btn:hover{
+    background-color: white;
+    color: black;
+    border:0px;
+    transition: 1000ms;
+}
+#contact-us{
+    background-image: url('./img/c.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: max-content;   
+}
+/*end Contact Page*/
 /*End Travel Page*/
