@@ -2,7 +2,7 @@
     if(comments_open()){
         echo '<div class="row">';
         echo '<div class="col-sm-10 comments">';
-        echo '<h2 class="text-center comments-title">التعليقات</h2>';
+        echo '<h2 class="text-center comments-title">Comments</h2>';
         echo '<ul class="list-unstyled comments-list">';
         $comments_args = array(
             'max_depth'             => 3,
@@ -13,14 +13,14 @@
         wp_list_comments($comments_args);
         echo '</ul>';
         $form_fields =array(
-                    'author'       => '<input name="author" type="text" class="form-control comment-form-in" placeholder="الاسم" />',
-                    'email'        => '<input name="email" type="text" class="form-control comment-form-in" placeholder="الايميل" />');
+                    'author'       => '<input name="author" type="text" class="form-control comment-form-in" placeholder="Name" />',
+                    'email'        => '<input name="email" type="text" class="form-control comment-form-in" placeholder="Email" />');
         $form_args = array(
             'fields'           =>  $form_fields ,
-            'comment_field'    => '<textarea name="comment" class="form-control comment-form-in" placeholder="التعليق"></textarea>',
-            'label_submit'     => 'حفظ' ,
+            'comment_field'    => '<textarea name="comment" class="form-control comment-form-in" placeholder="comment"></textarea>',
+            'label_submit'     => 'save' ,
             'class_submit'     => 'btn btn-dark',
-            'title_reply'      => 'كتابه تعليق' ,
+            'title_reply'      => 'write a comment' ,
             'comment_notes_before'  => '' 
             
         );
