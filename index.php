@@ -17,23 +17,47 @@
     </div>
     <div class="container">
         <div class="row offers_div">
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 trip_offer" id="first_trip">
-                <h3 class="trip_title">Mt Fuji And Hakone Trip</h3>
-                <img class="img-thumbnail trip_img img-responsive" src="<?php echo get_template_directory_uri() . '/img/fuji.jpg' ; ?>" alt="Mt Fuji">
-                <a href="#" class="btn btn-danger trip_btn">Read more</a>
-            </div>
-        
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 trip_offer" id="second_trip">
-                <h3 class="trip_title">Mt Fuji Trip Sorrunding Area</h3>
-                <img class="img-thumbnail trip_img img-responsive" src="<?php echo get_template_directory_uri() . '/img/fuji2.jpg' ; ?>" alt="Mt Fuji">
-                <a href="#" class="btn btn-danger trip_btn">Read more</a>
-            </div>
-
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 trip_offer" id="third_trip">
-                <h3 class="trip_title">Tokyo Trip</h3>
-                <img class="img-thumbnail trip_img img-responsive" src="<?php echo get_template_directory_uri() . '/img/tokyo.jpg' ; ?>" alt="Mt Fuji">
-                <a href="#" class="btn btn-danger trip_btn">Read more</a>
-            </div>
+            <?php 
+                $args = array(
+                    'tag_slug_in' => array('best-seller')
+                );
+                $posts = new WP_Query($args);
+                $i =1;
+                while($posts ->have_posts()){
+                    $posts->the_post();
+                    if($i == 1){
+                    ?>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 trip_offer" id="first_trip">
+                        <h3 class="trip_title"><?php the_title(); ?></h3>
+                        <?php the_post_thumbnail('',['class' => 'img-thumbnail trip_img img-responsive' , 'title' => 'Post Image']); ?>
+                        <a href="<?php the_permalink(); ?>" class="btn btn-danger trip_btn">Read more</a>
+                    </div>
+                    <?php
+                    }
+                    elseif($i== 2){
+                    ?>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 trip_offer" id="second_trip">
+                      <h3 class="trip_title"><?php the_title(); ?></h3>
+                        <?php the_post_thumbnail('',['class' => 'img-thumbnail trip_img img-responsive' , 'title' => 'Post Image']); ?>
+                        <a href="<?php the_permalink(); ?>" class="btn btn-danger trip_btn">Read more</a>
+                    </div>
+                    <?php
+                    }
+                    elseif($i==3){
+                    ?>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 trip_offer" id="third_trip">
+                       <h3 class="trip_title"><?php the_title(); ?></h3>
+                        <?php the_post_thumbnail('',['class' => 'img-thumbnail trip_img img-responsive' , 'title' => 'Post Image']); ?>
+                        <a href="<?php the_permalink(); ?>" class="btn btn-danger trip_btn">Read more</a>
+                    </div>
+                    <?php
+                    }
+                    else{
+                        break;
+                    }
+                    $i++;
+                }
+            ?>
         </div>
     </div>
 </div>

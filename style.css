@@ -605,10 +605,11 @@ path:hover{
     text-align: center;
 }
 .single-post-img{
-    height: 400px !important;
+    height: 300px !important;
     width: 100%;
-    margin-bottom:30px;
-
+    margin-bottom: 50px;
+    border: 0px !important;
+    border-radius: 15px !important;
 }
 /*End single-trip-post*/
 
